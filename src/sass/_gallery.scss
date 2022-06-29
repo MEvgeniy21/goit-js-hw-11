@@ -1,0 +1,13 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo-card {
+  width: 300px;
+  margin: 15px;
+}
+
+.photo-card img {
+  max-width: 100%;
+}
