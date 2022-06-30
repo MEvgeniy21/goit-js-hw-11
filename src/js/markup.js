@@ -1,5 +1,6 @@
 export function markupImage({
   webformatURL,
+  largeImageURL,
   tags,
   likes,
   views,
@@ -8,19 +9,21 @@ export function markupImage({
 }) {
   return `
 <div class="photo-card">
-  <img src="${webformatURL}" alt="${tags}" loading="lazy" />
+  <a class="photo-card__link" href="${largeImageURL}">
+    <img class="photo-card__image" src="${webformatURL}" alt="${tags}" loading="lazy" />
+  </a>
   <div class="info">
     <p class="info-item">
-      <b>Likes: </b>${likes}
+      <b>Likes</b><span>${likes}</span>
     </p>
     <p class="info-item">
-      <b>Views: </b>${views}
+      <b>Views</b><span>${views}</span>
     </p>
     <p class="info-item">
-      <b>Comments: </b>${comments}
+      <b>Comments</b><span>${comments}</span>
     </p>
     <p class="info-item">
-      <b>Downloads: </b>${downloads}
+      <b>Downloads</b><span>${downloads}</span>
     </p>
   </div>
 </div>
