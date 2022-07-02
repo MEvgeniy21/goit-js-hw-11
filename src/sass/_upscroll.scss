@@ -1,0 +1,25 @@
+.topbutton {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  color: cornflowerblue;
+  font-weight: 900;
+  border: 1px solid cornflowerblue;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: opacity 0.3s linear, background-color 0.3s linear;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    background-color: azure;
+  }
+}

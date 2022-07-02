@@ -5,18 +5,11 @@
 }
 
 .search-form {
+  position: fixed;
   display: flex;
   justify-content: center;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: cornflowerblue;
-}
-
-.load-more {
-  margin: 15px;
-}
-
-.is-hidden {
-  display: none;
 }
